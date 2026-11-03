@@ -1,0 +1,69 @@
+{
+  "profiles": {
+    "youtube": {
+      "name": "YouTube",
+      "process_names": ["chrome.exe", "msedge.exe", "firefox.exe", "brave.exe", "opera.exe", "vivaldi.exe"],
+      "title_keywords": ["youtube"],
+      "actions": {
+        "OPEN_PALM": {"action_type": "key", "keys": ["k"], "cooldown_ms": 1200, "description": "Play / Pause Video"},
+        "TWO_FINGERS_RIGHT": {"action_type": "key", "keys": ["l"], "cooldown_ms": 700, "description": "Forward 10s"},
+        "TWO_FINGERS_LEFT": {"action_type": "key", "keys": ["j"], "cooldown_ms": 700, "description": "Rewind 10s"},
+        "SWIPE_RIGHT": {"action_type": "hotkey", "keys": ["shift", "n"], "cooldown_ms": 900, "description": "Next Video"},
+        "SWIPE_LEFT": {"action_type": "hotkey", "keys": ["shift", "p"], "cooldown_ms": 900, "description": "Previous Video"},
+        "ONE_FINGER_UP": {"action_type": "scroll", "direction": "up", "description": "Scroll Up"},
+        "ONE_FINGER_DOWN": {"action_type": "scroll", "direction": "down", "description": "Scroll Down"},
+        "PINCH_OUT": {"action_type": "hotkey", "keys": ["ctrl", "="], "cooldown_ms": 400, "description": "Zoom In"},
+        "PINCH_IN": {"action_type": "hotkey", "keys": ["ctrl", "-"], "cooldown_ms": 400, "description": "Zoom Out"}
+      },
+      "denied_keys": ["enter", "return"]
+    },
+    "instagram": {
+      "name": "Instagram",
+      "process_names": ["chrome.exe", "msedge.exe", "firefox.exe", "brave.exe", "opera.exe"],
+      "title_keywords": ["instagram"],
+      "actions": {
+        "OPEN_PALM": {"action_type": "key", "keys": ["space"], "cooldown_ms": 1200, "description": "Play / Pause Reel"},
+        "SWIPE_UP": {"action_type": "key", "keys": ["down"], "cooldown_ms": 800, "description": "Next Reel"},
+        "SWIPE_DOWN": {"action_type": "key", "keys": ["up"], "cooldown_ms": 800, "description": "Previous Reel"},
+        "ONE_FINGER_UP": {"action_type": "scroll", "direction": "up", "description": "Scroll Feed Up"},
+        "ONE_FINGER_DOWN": {"action_type": "scroll", "direction": "down", "description": "Scroll Feed Down"}
+      },
+      "denied_keys": ["enter", "return"]
+    },
+    "whatsapp": {
+      "name": "WhatsApp Desktop",
+      "process_names": ["whatsapp.exe", "whatsappdesktop.exe"],
+      "title_keywords": ["whatsapp"],
+      "actions": {
+        "ONE_FINGER_UP": {"action_type": "scroll", "direction": "up", "description": "Scroll Conversation Up"},
+        "ONE_FINGER_DOWN": {"action_type": "scroll", "direction": "down", "description": "Scroll Conversation Down"},
+        "OPEN_PALM": {"action_type": "system", "command": "pause_actions", "cooldown_ms": 1000, "description": "Pause Gesture Actions"}
+      },
+      "denied_keys": ["enter", "return", "click_send"]
+    },
+    "presentation": {
+      "name": "Presentation",
+      "process_names": ["powerpnt.exe", "soffice.bin", "impress.exe", "chrome.exe", "msedge.exe"],
+      "title_keywords": ["slides", "presentation", "powerpoint", "impress", "keynote"],
+      "actions": {
+        "SWIPE_RIGHT": {"action_type": "key", "keys": ["right"], "cooldown_ms": 800, "description": "Next Slide"},
+        "SWIPE_LEFT": {"action_type": "key", "keys": ["left"], "cooldown_ms": 800, "description": "Previous Slide"},
+        "OPEN_PALM": {"action_type": "system", "command": "pause_actions", "cooldown_ms": 1000, "description": "Pause Presentation Controls"},
+        "PINCH_OUT": {"action_type": "hotkey", "keys": ["ctrl", "="], "cooldown_ms": 400, "description": "Zoom In"},
+        "PINCH_IN": {"action_type": "hotkey", "keys": ["ctrl", "-"], "cooldown_ms": 400, "description": "Zoom Out"}
+      },
+      "denied_keys": ["enter", "return"]
+    },
+    "default": {
+      "name": "Default App",
+      "process_names": [],
+      "title_keywords": [],
+      "actions": {
+        "ONE_FINGER_UP": {"action_type": "scroll", "direction": "up", "description": "Scroll Up"},
+        "ONE_FINGER_DOWN": {"action_type": "scroll", "direction": "down", "description": "Scroll Down"},
+        "OPEN_PALM": {"action_type": "system", "command": "pause_actions", "cooldown_ms": 1000, "description": "Pause Gestures"}
+      },
+      "denied_keys": ["enter", "return"]
+    }
+  }
+}

@@ -1,0 +1,31 @@
+# ==============================================================================
+# SYRAX - Voice & Gesture Intelligence System Dependencies
+# Tagline: "Speak. Gesture. Control."
+# ==============================================================================
+# IMPORTANT WINDOWS INSTALLATION ORDER:
+# 1. Install PyAudio FIRST:
+#      pip install pyaudio
+#    If the build fails (missing C++ compiler), run:
+#      pip install pipwin
+#      pipwin install pyaudio
+#    Or download pre-compiled wheel for your Python version (win_amd64) and run:
+#      pip install <wheel_file>.whl
+#    (Note: If PyAudio is not installed, SYRAX automatically falls back to sounddevice)
+#
+# 2. Install remaining requirements:
+#      pip install -r requirements.txt
+# ==============================================================================
+
+SpeechRecognition>=3.10.0
+sounddevice>=0.4.6
+comtypes>=1.2.0
+pyttsx3>=2.90
+opencv-python>=4.8.0
+mediapipe>=0.10.0
+pyautogui>=0.9.54
+pywin32>=306
+pygetwindow>=0.0.9
+numpy>=1.24.0
+pillow>=10.0.0
+pytest>=7.0.0
+playwright>=1.40.0

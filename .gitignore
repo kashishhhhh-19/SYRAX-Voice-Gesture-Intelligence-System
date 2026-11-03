@@ -1,0 +1,41 @@
+# Local environments and virtualenvs
+.venv/
+venv/
+ENV/
+env/
+
+# Data and backups
+local_environment_backup/
+.syrax_data/
+_post_snapshot_quarantine/
+backup_pre_upgrade.zip
+restore_report.md
+*.zip
+*.bak
+*.tmp
+
+# Packaging and distribution
+dist/
+build/
+release/
+*.spec
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs and environment variables
+logs/
+*.log
+.env
+
+# IDE and OS metadata
+.vscode/
+.idea/
+[Dd]esktop.ini
+Thumbs.db
+.DS_Store

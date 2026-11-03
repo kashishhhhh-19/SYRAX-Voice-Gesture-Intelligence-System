@@ -1,0 +1,70 @@
+{
+  "camera": {
+    "index": 0,
+    "width": 640,
+    "height": 480,
+    "fps": 30,
+    "api_backend": "CAP_DSHOW",
+    "auto_reconnect": true,
+    "reconnect_interval_seconds": 2.0,
+    "max_consecutive_read_failures": 10,
+    "low_light_threshold": 45.0,
+    "clahe_enhancement": true
+  },
+  "tracking": {
+    "backend_preference": [
+      "tasks_hand_landmarker",
+      "tasks_gesture_recognizer",
+      "legacy_solutions",
+      "opencv_fallback"
+    ],
+    "task_model_path": "models/hand_landmarker.task",
+    "gesture_model_path": "models/gesture_recognizer.task",
+    "max_num_hands": 1,
+    "min_detection_confidence": 0.65,
+    "min_tracking_confidence": 0.60,
+    "hand_lost_grace_period_ms": 200,
+    "smoothing_type": "exponential",
+    "smoothing_alpha": 0.65,
+    "preview_mirrored": true
+  },
+  "static_pose_thresholds": {
+    "finger_extension_ratio": 1.55,
+    "thumb_extension_ratio": 1.15,
+    "pinch_distance_threshold": 0.18,
+    "stability_consecutive_frames": 3,
+    "fist_hold_ms": 950,
+    "palm_hold_ms": 450
+  },
+  "motion_thresholds": {
+    "window_ms": 400,
+    "swipe_min_distance": 0.12,
+    "swipe_min_velocity": 0.35,
+    "swipe_max_perpendicular_ratio": 0.55,
+    "pinch_zoom_spread_delta": 0.05,
+    "vertical_deadzone": 0.025,
+    "horizontal_deadzone": 0.025
+  },
+  "scrolling": {
+    "movement_driven": true,
+    "deadzone_dy": 0.015,
+    "sensitivity_factor": 1200,
+    "max_scroll_tick_rate": 15,
+    "max_scroll_step": 360,
+    "invert_scroll": false
+  },
+  "debounce_and_cooldown": {
+    "swipe_cooldown_ms": 800,
+    "play_pause_cooldown_ms": 1200,
+    "zoom_cooldown_ms": 400,
+    "fist_toggle_cooldown_ms": 1500,
+    "general_cooldown_ms": 600,
+    "require_neutral_position": true,
+    "neutral_return_threshold": 0.16
+  },
+  "control": {
+    "fist_toggle_enabled": true,
+    "start_armed": true,
+    "voice_feedback_enabled": false
+  }
+}

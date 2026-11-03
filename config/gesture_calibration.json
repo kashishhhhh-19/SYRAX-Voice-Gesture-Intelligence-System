@@ -1,0 +1,13 @@
+{
+  "neutral_palm_center": [0.5, 0.6],
+  "neutral_hand_scale": 0.22,
+  "neutral_jitter_radius": 0.04,
+  "finger_extension_margin": 1.55,
+  "thumb_extension_margin": 1.15,
+  "pinch_min_distance": 0.08,
+  "pinch_max_distance": 0.35,
+  "swipe_min_distance": 0.12,
+  "swipe_min_velocity": 0.35,
+  "calibrated_at": null,
+  "is_user_calibrated": false
+}
