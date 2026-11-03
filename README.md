@@ -1,6 +1,8 @@
 # SYRAX: Voice & Gesture Intelligence System
 
 > **"Speak. Gesture. Control."**
+>
+> An AI-powered desktop assistant combining voice recognition and hand gesture control for seamless, hands-free computer interaction on Windows 10/11.
 
 [![Python Version](https://img.shields.io/badge/Python-3.10%2B%20%7C%203.14-blue.svg)](https://www.python.org/)
 [![Platform](https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-0078D6.svg)](https://www.microsoft.com/windows)
